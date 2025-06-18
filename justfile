@@ -14,7 +14,7 @@ release:
   git tag "v$version" -m "$tagMessage"
   git push origin "v$version"
   read -p "Press any key to publish..."
-  npm publish
+  npm publish --access public
   gh release create "v$version" -t "Release $version" -n "$tagMessage"
 
   
