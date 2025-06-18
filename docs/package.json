@@ -5,7 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@hunterwilhelm/typebox-helpers": "file:.."
+    "@hunterstack/typebox-helpers": "file:.."
   },
   "devDependencies": {
     "@shikijs/vitepress-twoslash": "^3.5.0",

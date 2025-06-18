@@ -15,7 +15,7 @@ hero:
 Create TypeBox union types from string arrays with full type safety:
 
 ```ts twoslash
-import { UnionOfString } from '@hunterwilhelm/typebox-helpers'
+import { UnionOfString } from '@hunterstack/typebox-helpers'
 
 const Colors = UnionOfString(['red', 'green', 'blue'])
 //        ^?
@@ -24,7 +24,7 @@ const Colors = UnionOfString(['red', 'green', 'blue'])
 ## Installation
 
 ```bash
-npm install @hunterwilhelm/typebox-helpers
+npm install @hunterstack/typebox-helpers
 ```
 
 ## Features

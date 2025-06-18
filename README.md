@@ -5,7 +5,7 @@ A collection of tree-shakable TypeBox helper utilities to make working with Type
 ## Installation
 
 ```bash
-npm install @hunterwilhelm/typebox-helpers
+npm install @hunterstack/typebox-helpers
 ```
 
 ## Features
@@ -21,7 +21,7 @@ npm install @hunterwilhelm/typebox-helpers
 Create TypeBox union types from string arrays with full type safety:
 
 ```typescript
-import { UnionOfString } from '@hunterwilhelm/typebox-helpers'
+import { UnionOfString } from '@hunterstack/typebox-helpers'
 
 const Colors = UnionOfString(['red', 'green', 'blue'])
 // TUnion<[TLiteral<"red">, TLiteral<"green">, TLiteral<"blue">]>

@@ -1,5 +1,5 @@
 {
-  "name": "@hunterwilhelm/typebox-helpers",
+  "name": "@hunterstack/typebox-helpers",
   "version": "0.0.1",
   "description": "Tree shakable typebox helper utilities",
   "author": "Hunter Wilhelm",
