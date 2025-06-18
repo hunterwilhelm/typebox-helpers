@@ -4,11 +4,11 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
+  "devDependencies": {
+    "@shikijs/vitepress-twoslash": "^3.6.0",
+    "vitepress": "^1.6.3"
+  },
   "dependencies": {
     "@hunterstack/typebox-helpers": "file:.."
-  },
-  "devDependencies": {
-    "@shikijs/vitepress-twoslash": "^3.5.0",
-    "vitepress": "^1.6.3"
   }
 }
