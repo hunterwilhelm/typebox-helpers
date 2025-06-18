@@ -9,7 +9,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@hunterstack/typebox-helpers": "file:.."
+    "@hunterstack/typebox-helpers": "0.0.1"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.9.5"
