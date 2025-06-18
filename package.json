@@ -1,0 +1,54 @@
+{
+  "name": "@hunterwilhelm/typebox-helpers",
+  "version": "0.0.1",
+  "description": "Tree shakable typebox helper utilities",
+  "author": "Hunter Wilhelm",
+  "license": "MIT",
+  "homepage": "https://github.com/hunterwilhelm/typebox-helpers#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunterwilhelm/typebox-helpers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hunterwilhelm/typebox-helpers/issues"
+  },
+  "keywords": [
+    "typescript",
+    "typebox",
+    "utility",
+    "type-safe",
+    "typebox-helpers"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "LICENSE",
+    "dist"
+  ],
+  "scripts": {
+    "release": "just release",
+    "build": "tsc",
+    "test": "vitest run",
+    "bench": "tsx src/benchmark.index.ts",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.35"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.14.1",
+    "@ark/attest": "^0.48.2",
+    "@types/mocha": "^10.0.10",
+    "eslint": "^9.29.0",
+    "mocha": "^11.7.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}
