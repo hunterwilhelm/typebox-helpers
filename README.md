@@ -1,3 +1,13 @@
+
+<div align="center">
+  <a href="https://www.npmjs.com/package/@hunterstack/typebox-helpers">
+    <img alt="weekly downloads" src="https://img.shields.io/npm/dw/@hunterstack/typebox-helpers?logo=npm" />
+  </a>
+  <a href="https://github.com/hunterwilhelm/typebox-helpers/blob/main/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/github/license/hunterwilhelm/typebox-helpers?logo=open-source-initiative" />
+  </a>
+</div>
+
 # TypeBox Helpers
 
 A collection of tree-shakable TypeBox helper utilities to make working with TypeBox even easier.
