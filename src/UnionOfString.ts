@@ -6,8 +6,8 @@ import { Type } from '@sinclair/typebox'
  * @template T - Tuple type extending string[] with const assertion to preserve literal types
  * @template Acc - Accumulator type to build the union type
  */
-export type TUnionOfString<T extends string[], Acc extends TSchema[] = []> = 
-  T extends [infer L extends string, ...infer R extends string[]]
+export type TUnionOfString<T extends string[], Acc extends TSchema[] = []>
+  = T extends [infer L extends string, ...infer R extends string[]]
     ? TUnionOfString<R, [...Acc, TLiteral<L>]>
     : Acc
 /**
