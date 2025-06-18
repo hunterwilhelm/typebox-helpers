@@ -32,5 +32,5 @@ export type TUnionOfString<T extends string[], Acc extends TSchema[] = []> =
  * @see {@link https://github.com/sinclairzx81/typebox/discussions/315#discussioncomment-9304493 TypeBox Discussion}
  */
 export function UnionOfString<const T extends string[]>(values: [...T], options: SchemaOptions = {}): TUnion<TUnionOfString<T>> {
-  return values.map(value => Type.Literal(value)), options as never // safe cast due to type constraints
+  return Type.Union(values.map(value => Type.Literal(value)), options) as never // safe cast due to type constraints
 }
