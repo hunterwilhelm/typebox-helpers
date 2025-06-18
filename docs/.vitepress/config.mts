@@ -25,7 +25,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/hunterwilhelm/butter-enums' }
+      { icon: 'github', link: 'https://github.com/hunterwilhelm/typebox-helpers' }
     ]
   },
   markdown: {
