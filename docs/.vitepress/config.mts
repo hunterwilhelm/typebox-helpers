@@ -1,11 +1,10 @@
-import { defineConfig } from 'vitepress'
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
-
+import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Typebox Helpers",
-  description: "Type-safe helpers for TypeBox",
+  title: 'Typebox Helpers',
+  description: 'Type-safe helpers for TypeBox',
   head: [
     ['link', { rel: 'icon', href: 'favicon.ico', type: 'image/x-icon' }],
     // ['meta', { property: 'og:image', content: 'https://typebox-helpers.hunterwilhelm.com/og.png' }],
@@ -19,18 +18,18 @@ export default defineConfig({
     // ['meta', { property: 'twitter:image', content: 'https://typebox-helpers.hunterwilhelm.com/og.png' }],
   ],
   themeConfig: {
-    
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/hunterwilhelm/typebox-helpers' }
-    ]
+      { icon: 'github', link: 'https://github.com/hunterwilhelm/typebox-helpers' },
+    ],
   },
   markdown: {
     codeTransformers: [
-      transformerTwoslash({})
+      transformerTwoslash({}),
     ],
     languages: ['js', 'jsx', 'ts', 'tsx'],
   },

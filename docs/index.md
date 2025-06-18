@@ -7,7 +7,6 @@ hero:
   tagline: "UnionOfString and more to come!"
 ---
 
-
 ## Usage
 
 ### UnionOfString
@@ -27,10 +26,8 @@ const Colors = UnionOfString(['red', 'green', 'blue'])
 npm install @hunterstack/typebox-helpers
 ```
 
-
 ## Features
 
 - Tree-shakable utilities
-- Type-safe helpers 
+- Type-safe helpers
 - Zero dependencies (except TypeBox)
-

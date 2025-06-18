@@ -1,4 +1,3 @@
-
 <div align="center">
   <a href="https://www.npmjs.com/package/@hunterstack/typebox-helpers">
     <img alt="weekly downloads" src="https://img.shields.io/npm/dw/@hunterstack/typebox-helpers?logo=npm" />
@@ -55,4 +54,4 @@ npm run build
 
 ## License
 
-MIT 
+MIT

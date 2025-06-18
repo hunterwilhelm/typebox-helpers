@@ -1,1 +1,1 @@
-export * from './UnionOfString.benchmark';
+export * from './UnionOfString.benchmark'
