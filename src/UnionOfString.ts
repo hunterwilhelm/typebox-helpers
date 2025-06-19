@@ -10,6 +10,7 @@ export type TUnionOfString<T extends string[], Acc extends TSchema[] = []>
   = T extends [infer L extends string, ...infer R extends string[]]
     ? TUnionOfString<R, [...Acc, TLiteral<L>]>
     : Acc
+
 /**
  * Creates a TypeBox union type from an array of string literals.
  * This provides a convenient way to define string literal union types that can be used for runtime validation.

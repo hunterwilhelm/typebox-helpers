@@ -27,8 +27,9 @@
   ],
   "scripts": {
     "release": "just release",
-    "build": "tsc",
-    "test": "vitest run",
+    "build": "tsc --project tsconfig.build.json",
+    "test": "rm -rf .attest && vitest run",
+    "test:build": "tsc --project tsconfig.test.json --noEmit",
     "bench": "tsx src/benchmark.index.ts",
     "test:watch": "vitest",
     "prepublishOnly": "npm run build",
@@ -36,7 +37,8 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@sinclair/typebox": "^0.34.35"
+    "@sinclair/typebox": "^0.34.35",
+    "@sinclair/typemap": "^0.10.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.14.1",
@@ -51,5 +53,8 @@
   },
   "directories": {
     "doc": "docs"
+  },
+  "mocha": {
+    "require": "./setupMocha.ts"
   }
 }

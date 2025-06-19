@@ -9,6 +9,20 @@ hero:
 
 ## Usage
 
+### UnionOf
+
+Create TypeBox union types from arrays with full type safety:
+
+```ts
+import { UnionOf } from '@hunterstack/typebox-helpers'
+
+const Numbers = UnionOf([1, 2, 3, 4, 5])
+// TUnion<[TLiteral<1>, TLiteral<2>, TLiteral<3>, TLiteral<4>, TLiteral<5>]>
+
+const Mixed = UnionOf([1, 'red', true])
+// TUnion<[TLiteral<1>, TLiteral<"red">, TLiteral<true>]>
+```
+
 ### UnionOfString
 
 Create TypeBox union types from string arrays with full type safety:
