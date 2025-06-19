@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Typebox Helpers"
-  tagline: "UnionOfString and more to come!"
+  tagline: "UnionOfString, UnionOf, and more to come!"
 ---
 
 ## Usage
