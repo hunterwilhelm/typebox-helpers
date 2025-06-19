@@ -30,7 +30,7 @@
     "build": "tsc --project tsconfig.build.json",
     "test": "rm -rf .attest && vitest run",
     "test:build": "tsc --project tsconfig.test.json --noEmit",
-    "bench": "tsx src/benchmark.index.ts",
+    "bench": "tsx src/index.benchmark.ts",
     "test:watch": "vitest",
     "prepublishOnly": "npm run build",
     "lint": "eslint",
