@@ -18,6 +18,7 @@ export type TUnionOfString<T extends string[]> = {
  * @param values - Array of string literals to create union from
  * @param options - Optional TypeBox schema options
  * @returns TypeBox union type of string literals
+ * @deprecated Use UnionOf instead
  *
  * @example
  * ```ts
