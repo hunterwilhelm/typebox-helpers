@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Typebox Helpers"
-  tagline: "UnionOfString, UnionOf, and more to come!"
+  tagline: "UnionOf and more to come!"
 ---
 
 ## Usage
@@ -21,17 +21,6 @@ const Numbers = UnionOf([1, 2, 3, 4, 5])
 
 const Mixed = UnionOf([1, 'red', true])
 // TUnion<[TLiteral<1>, TLiteral<"red">, TLiteral<true>]>
-```
-
-### UnionOfString
-
-Create TypeBox union types from string arrays with full type safety:
-
-```ts
-import { UnionOfString } from '@hunterstack/typebox-helpers'
-
-const Colors = UnionOfString(['red', 'green', 'blue'])
-// TUnion<[TLiteral<"red">, TLiteral<"green">, TLiteral<"blue">]>
 ```
 
 ## Installation
