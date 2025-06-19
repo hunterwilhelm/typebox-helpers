@@ -8,7 +8,7 @@ import { UnionOfString } from './UnionOfString'
     const _schema = UnionOfString(values)
     type S = Static<typeof _schema>
     return {} as S
-  }).types([80, 'instantiations'])
+  }).types([101, 'instantiations'])
 }
 
 {
@@ -17,7 +17,7 @@ import { UnionOfString } from './UnionOfString'
     const _schema = UnionOfString(values)
     type S = Static<typeof _schema>
     return {} as S
-  }).types([80, 'instantiations'])
+  }).types([101, 'instantiations'])
 }
 
 {
@@ -26,7 +26,7 @@ import { UnionOfString } from './UnionOfString'
     const _schema = UnionOfString(values)
     type S = Static<typeof _schema>
     return {} as S
-  }).types([80, 'instantiations'])
+  }).types([101, 'instantiations'])
 }
 
 {
@@ -35,7 +35,7 @@ import { UnionOfString } from './UnionOfString'
     const _schema = UnionOfString(values)
     type S = Static<typeof _schema>
     return {} as S
-  }).types([80, 'instantiations'])
+  }).types([101, 'instantiations'])
 }
 
 function toTuple<const T extends unknown[]>(values: T): T {

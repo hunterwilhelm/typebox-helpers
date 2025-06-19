@@ -1,6 +1,6 @@
 {
   "name": "@hunterstack/typebox-helpers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tree shakable typebox helper utilities",
   "author": "Hunter Wilhelm",
   "license": "MIT",

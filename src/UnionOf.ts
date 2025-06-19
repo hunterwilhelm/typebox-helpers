@@ -1,15 +1,13 @@
-import type { SchemaOptions, TLiteral, TLiteralValue, TSchema, TUnion } from '@sinclair/typebox'
+import type { SchemaOptions, TLiteral, TLiteralValue, TUnion } from '@sinclair/typebox'
 import { Type } from '@sinclair/typebox'
 
 /**
  * Helper type to convert an array of strings into an array of TypeBox TLiteral types
- * @template T - Tuple type extending string[] with const assertion to preserve literal types
- * @template Acc - Accumulator type to build the union type
+ * @template T - Tuple type extending TLiteralValue[] with const assertion to preserve literal types
  */
-export type TUnionOf<T extends TLiteralValue[], Acc extends TSchema[] = []>
-  = T extends [infer L extends TLiteralValue, ...infer R extends TLiteralValue[]]
-    ? TUnionOf<R, [...Acc, TLiteral<L>]>
-    : Acc
+export type TUnionOf<T extends TLiteralValue[]> = {
+  [K in keyof T]: T[K] extends TLiteralValue ? TLiteral<T[K]> : never
+}
 
 /**
  * Creates a TypeBox union type from an array of literals.
